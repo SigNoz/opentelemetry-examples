@@ -45,29 +45,11 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
-## Test
+Now the app will be running at http://localhost:3001  🎉
 
-```bash
-# unit tests
-$ npm run test
+Make some requests to this application by calling the above URL multiple times. You can then check your NestJS application metrics in SigNoz dashboard
 
-# e2e tests
-$ npm run test:e2e
+Note
+-----
 
-# test coverage
-$ npm run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+The exporter IP is set to `localhost` so app will be sending data to localhost IP, if SigNoz is installed that different IP then update that IP at this [line](https://github.com/SigNoz/sample-NestJs-app/blob/b8ee9ed9ed5024f715e41fe2f1e4a56401ecbca5/src/tracer.ts#L16).
